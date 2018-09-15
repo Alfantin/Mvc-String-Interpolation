@@ -21,7 +21,7 @@ namespace MvcSI.Controllers {
         }
 
         public ActionResult Index() {
-            return Content($@"
+            return Layout($@"
                 <h1>People</h1>
                 <ul>
                     {db.people.map(i =>
